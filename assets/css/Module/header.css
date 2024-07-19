@@ -72,7 +72,21 @@ ul.header-language__dropdown.dropdown-menu.show {
   padding: 6% 0px;
 }
 
-.dropdown-toggle::after {
+.header-language__link::after {
+  content: "";
+  background-image: url("../../img/header/Arrow.svg");
+  border: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 16px;
+  position: absolute;
+  pointer-events: none;
+  transform: rotate(90deg);
+  right: -3px;
+}
+
+#offcanvas__dropdown .dropdown-toggle::after {
   content: "";
   background-image: url("../../img/header/Arrow.svg");
   border: transparent;
@@ -86,6 +100,11 @@ ul.header-language__dropdown.dropdown-menu.show {
   right: 27px;
 }
 
+.offcanvas-header button.btn-close:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
 a#languageDropdown {
   display: flex;
   align-items: center;

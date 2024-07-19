@@ -55,7 +55,7 @@ const rate_swiper = new Swiper(".rate-swiper", {
   breakpoints: {
     0: {
       slidesPerView: 1.5,
-      spaceBetween: 25,
+      spaceBetween: 15,
     },
 
     // 425: {
