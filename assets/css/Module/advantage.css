@@ -1,0 +1,250 @@
+.advantage-wrapper {
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.advantage-header__sub {
+  font-size: var(--sm-title);
+  color: #be1614;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  line-height: var(--sm-line-height);
+  width: fit-content;
+  margin: 0px auto;
+}
+
+.advantage-header__sub::before {
+  background: #ffefef;
+  width: 108%;
+  clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
+}
+
+.advantage-header__text {
+  position: relative;
+}
+.advantage-header__title {
+  font-size: var(--m-title);
+  text-align: center;
+  line-height: var(--m-line-height-2);
+  font-weight: bold;
+  margin: max(15px, min(2vw, 25px)) auto max(10px, min(2vw, 25px)) auto;
+  text-wrap: balance;
+}
+
+.advantage-header__desc {
+  font-size: var(--sub-title);
+  text-align: center;
+  line-height: var(--sub-line-height);
+  margin: 0 auto;
+}
+
+.advantage-list__img {
+  position: relative;
+  grid-row: 1 / span 3;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantage-list {
+  display: grid;
+  margin-top: max(66px, min(2vw, 34px));
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: max(44px, min(2vw, 60px));
+  grid-column-gap: max(40px, min(2vw, 95px));
+  grid-auto-flow: dense;
+}
+
+.advantage-item__number {
+  width: max(40px, min(4.5vw, 58px));
+  height: max(40px, min(4.5vw, 58px));
+  text-align: center;
+  line-height: max(40px, min(4.5vw, 58px));
+  font-size: var(--sm-title);
+  font-weight: bold;
+  border-radius: 15%;
+}
+
+.advantage-item__number.disable {
+  background: #ffefef;
+  background-repeat: no-repeat;
+  color: #be1614;
+}
+
+.advantage-item__number.actived {
+  background: #be1614;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.advantage-item__header {
+  font-size: var(--sm-title);
+  font-weight: var(--font-bold);
+  line-height: max(15px, min(5.5vw, 35px));
+  width: 100%;
+  text-transform: uppercase;
+  margin: max(7px, min(2vw, 15px)) 0px;
+  display: inline-block;
+}
+
+.advantage-item__desc {
+  width: 100%;
+  font-size: var(--paragraph);
+  line-height: var(--sub-line-height);
+  color: #3d3d3d;
+}
+
+.align-left {
+  float: right;
+}
+
+.advantage-item--left {
+  text-align: right;
+}
+
+.advantage-item--right {
+  text-align: left;
+}
+
+.advantage-number--right {
+  float: left;
+}
+
+#item1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#item2 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#item3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#item4 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#item5 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.color-red {
+  color: #b42220;
+}
+
+/* moblie */
+@media (max-width: 767px) {
+  .advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 0px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .advantage-list__img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .advantage-item {
+    width: auto;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 15px;
+  }
+
+  .advantage-item__header {
+    width: fit-content;
+    height: fit-content;
+    text-align: left !important;
+    margin-left: 15px;
+  }
+  .advantage-item__number {
+    float: left;
+  }
+
+  .advantage-item__desc {
+    text-align: left !important;
+    margin-left: 55px;
+  }
+
+  .advantage-wrapper {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .advantage-list__img {
+    padding: 0px 25%;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (max-width: 1023px) {
+}
+
+/* Small devices (phones): chiều rộng từ  424px đổ xuống */
+@media (max-width: 375px) {
+  .advantage-item__header {
+    flex: 1;
+  }
+}
+@media (max-width: 424px) {
+}
+/* Medium devices (phones): chiều rộng từ 425px đến 767px */
+@media (min-width: 425px) and (max-width: 767px) {
+}
+/* Tablet: */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+/* Laptop/Desktop: */
+@media (min-width: 1024px) {
+}
+/* Small laptops: chiều rộng từ 1024px đến 1439px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+/* Large laptops/desktops: chiều rộng từ 1440px trở lên */
+@media (min-width: 1440px) {
+}
+
+/* The smaller, the bigger css */
+@media (width: 375px) {
+  .advantage-header__desc {
+    width: 90%;
+  }
+  .advantage-header__title {
+    width: 90%;
+  }
+}
+@media (min-width: 376px) and (max-width: 1919px) {
+  .advantage-header__desc {
+    width: calc(70% + (100vw - 375px) * 0.04);
+  }
+  .advantage-header__title {
+    /* width: calc(45% + (100vw - 375px) * 0.04); */
+  }
+}
+
+@media (width: 1920px) {
+  .advantage-header__desc {
+    width: 70%;
+  }
+  .advantage-header__title {
+    width: 45%;
+  }
+}

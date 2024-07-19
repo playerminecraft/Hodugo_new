@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="./assets/css/Library/bootstrap.min.css" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="./assets/css/Library/swiper-bundle.min.css" />
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <!--Start body -->
+  <body>
+    <!--Start header -->
+    <header class="header">
+      <div class="container">
+        <nav class="header-navbar navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="header-logo navbar-brand" href="./HUDOGO.html">
+              <img src="./assets/img/Logo/header-logo.svg" alt="" class="header-logo__img" />
+            </a>
+
+            <button class="header-navbar__toggler navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="header-navbar__toggler-icon navbar-toggler-icon"></span>
+            </button>
+
+            <div class="header-navbar__collapse collapse navbar-collapse">
+              <ul class="header-navbar__list navbar-nav">
+                <li class="header-introduce nav-item">
+                  <a class="header-introduce__link nav-link selected" href="#">Giới thiệu</a>
+                </li>
+                <li class="header-instruct nav-item">
+                  <a class="header-instruct__link nav-link" href="#">Hướng dẫn sử dụng</a>
+                </li>
+                <li class="header-news nav-item">
+                  <a class="header-news__link nav-link" href="#">Tin tức</a>
+                </li>
+                <li class="header-language nav-item dropdown">
+                  <a class="header-language__link nav-link dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="global-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                      <path
+                        id="Path_2"
+                        data-name="Path 2"
+                        d="M33.294,28.331A14.93,14.93,0,0,0,35.5,20.5h0a14.93,14.93,0,0,0-2.206-7.831l-.008-.013a15,15,0,0,0-25.572,0l-.008.013a15,15,0,0,0,0,15.662l.008.013a15,15,0,0,0,25.572,0Zm-10.877,4.6a3.645,3.645,0,0,1-.974.673,2.2,2.2,0,0,1-1.887,0,4.591,4.591,0,0,1-1.7-1.5,13.407,13.407,0,0,1-1.937-4.2q2.289-.141,4.582-.143t4.583.144a16.921,16.921,0,0,1-.822,2.263,8.7,8.7,0,0,1-1.844,2.766ZM7.215,21.343h6.05a29.765,29.765,0,0,0,.547,5.027q-2.481.218-4.949.6a13.224,13.224,0,0,1-1.648-5.627ZM8.863,14.03q2.467.382,4.951.6a29.714,29.714,0,0,0-.548,5.027H7.215A13.224,13.224,0,0,1,8.863,14.03Zm9.72-5.96a3.644,3.644,0,0,1,.974-.673,2.2,2.2,0,0,1,1.887,0,4.591,4.591,0,0,1,1.7,1.5,13.407,13.407,0,0,1,1.937,4.2q-2.289.141-4.582.143T15.917,13.1a16.918,16.918,0,0,1,.822-2.263,8.7,8.7,0,0,1,1.843-2.766Zm15.2,11.587h-6.05a29.768,29.768,0,0,0-.547-5.027q2.481-.218,4.949-.6A13.224,13.224,0,0,1,33.785,19.657ZM15.507,26.239a27.875,27.875,0,0,1-.556-4.9h11.1a27.869,27.869,0,0,1-.555,4.9Q23,26.075,20.5,26.072T15.507,26.239Zm9.986-11.478a27.877,27.877,0,0,1,.556,4.9h-11.1a27.87,27.87,0,0,1,.555-4.9q2.494.164,4.994.167T25.493,14.761Zm2.242,6.582h6.051a13.224,13.224,0,0,1-1.648,5.627q-2.467-.382-4.951-.6a29.712,29.712,0,0,0,.548-5.027Zm3.392-8.864q-2.157.311-4.327.493a19.22,19.22,0,0,0-1-2.83,11.96,11.96,0,0,0-1.4-2.375,13.312,13.312,0,0,1,6.726,4.712ZM11.085,11.085A13.31,13.31,0,0,1,16.6,7.767c-.032.041-.064.08-.1.122a15.385,15.385,0,0,0-2.3,5.083q-2.17-.184-4.33-.493a13.424,13.424,0,0,1,1.212-1.394ZM9.873,28.521q2.157-.311,4.327-.493a19.219,19.219,0,0,0,1,2.83,11.961,11.961,0,0,0,1.4,2.375,13.312,13.312,0,0,1-6.726-4.712Zm20.041,1.394A13.31,13.31,0,0,1,24.4,33.233c.032-.041.064-.08.1-.122a15.385,15.385,0,0,0,2.3-5.083q2.17.184,4.33.493a13.424,13.424,0,0,1-1.212,1.394Z"
+                        transform="translate(-5.5 -5.5)"
+                        fill="#3d3d3d"
+                      />
+                    </svg>
+                    <span>Tiếng Việt</span>
+                  </a>
+                  <ul class="header-language__dropdown dropdown-menu" aria-labelledby="languageDropdown">
+                    <li>
+                      <a class="header-language__dropdown-item dropdown-item" href="#">English</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="header-download d-none d-lg-block">
+              <button class="header-download__btn btn">Tải ứng dụng ngay</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--End header-->
+
+    <!--Start home -->
+    <main class="home">
+      <!-- Start slider -->
+      <section class="slider">
+        <div class="slider-wrapper">
+          <div class="slider-slide">
+            <div class="swiper slider-swiper">
+              <div class="swiper-wrapper">
+                <div class="slider-banner swiper-slide">
+                  <img class="slider-banner__img" src="./assets/img/banner/banner-1.jpg" alt="" />
+                </div>
+                <div class="slider-banner swiper-slide">
+                  <img class="slider-banner__img" src="./assets/img/banner/banner-2.jpg" alt="" />
+                </div>
+                <div class="slider-banner swiper-slide">
+                  <img class="slider-banner__img" src="./assets/img/banner/banner-3.jpg" alt="" />
+                </div>
+                <div class="slider-banner swiper-slide">
+                  <img class="slider-banner__img" src="./assets/img/banner/banner-4.jpg" alt="" />
+                </div>
+                <div class="slider-banner swiper-slide">
+                  <img class="slider-banner__img" src="./assets/img/banner/banner-5.jpg" alt="" />
+                </div>
+              </div>
+              <div class="slider-pagination swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End slider-->
+
+      <!-- Start introduction -->
+      <section class="introduction">
+        <div class="container">
+          <div class="introduction-wrapper">
+            <div class="introduction-img">
+              <img src="./assets/img/intro/introduction-img.png" alt="" style="width: 100%" />
+            </div>
+            <div class="introduction-infor">
+              <div class="introduction-header">
+                <h2 class="introduction-header__sub header__sub">
+                  <div class="introduction-header__text">Giới thiệu</div>
+                </h2>
+                <h1 class="introduction-header__title">
+                  Ứng dụng kết nối
+                  <p>Khách hàng và tài xế hàng đầu Việt Nam</p>
+                </h1>
+                <p class="introduction-header__desc">Nền tảng tăng số phục vụ nhu cầu di chuyển của người dùng và giúp tăng thu nhập cho tài xế</p>
+              </div>
+              <!--introduction-item-start -->
+              <ul class="introduction-list list-group">
+                <li class="introduction-item list-group-item">
+                  <div class="introduction-item__svg">
+                    <img class="introduction-item__img" src="./assets/img/intro/introduction-svg.svg" alt="" />
+                  </div>
+                  <div class="introduction-item__text">Vì một mục tiêu khách hàng và tài xế hai bên cùng có lợi</div>
+                </li>
+                <li class="introduction-item list-group-item">
+                  <div class="introduction-item__svg">
+                    <img class="introduction-item__img" src="./assets/img/intro/introduction-svg.svg" alt="" />
+                  </div>
+                  <div class="introduction-item__text">Chúng tôi cung cấp cho khách hàng dịch vụ đặt xe ô tô một chiều 24/24</div>
+                </li>
+                <li class="introduction-item list-group-item">
+                  <div class="introduction-item__svg">
+                    <img class="introduction-item__img" src="./assets/img/intro/introduction-svg.svg" alt="" />
+                  </div>
+                  <div class="introduction-item__text">Giúp các tài xế tiếp cận được với hàng triệu khách hàng khắp nơi trên đất nước</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End introduction -->
+
+      <!-- Start type -->
+      <section class="type">
+        <div class="container">
+          <div class="type-wrapper">
+            <!-- type__heading--start -->
+            <div class="type-header">
+              <h2 class="type-header__sub header__sub">
+                <div class="type-header__text">Loại xe khả dụng</div>
+              </h2>
+              <h1 class="type-header__title">
+                <span class="type-header__first">Các loại xe chúng tôi</span>
+                <span class="type-header__last"> cung cấp dịch vụ</span>
+              </h1>
+
+              <p class="type-header__desc">Đa dạng các loại phương tiện, đáp ứng mọi nhu cầu di chuyển hàng ngày với một trải nghiệm hài lòng chu đáo</p>
+            </div>
+            <!-- type__heading--end -->
+
+            <!-- type__content--start -->
+            <div class="type-slide">
+              <div class="type-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="type-detail">
+                      <div class="type-detail__body card">
+                        <img src="./assets/img/type/type-car.svg" class="type-img__top" alt="Xe con" />
+                        <div class="card-body">
+                          <h5 class="type-detail__name card-title">Xe con page1</h5>
+                          <p class="type-detail__description card-text">Xe nhỏ từ 4 đến 7 chỗ</p>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="type-detail">
+                      <div class="type-detail__body card">
+                        <img src="./assets/img/type/type-car__tourist.svg" class="type-img__top" alt="Xe du lịch" />
+                        <div class="card-body">
+                          <h5 class="type-detail__name card-title">Xe du lịch</h5>
+                          <p class="type-detail__description card-text">Xe du lịch từ 16 đến 45 chỗ</p>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="type-detail">
+                      <div class="type-detail__body card">
+                        <img src="./assets/img/type/type-car__truck.svg" class="type-img__top" alt="Xe tải" />
+                        <div class="card-body">
+                          <a href="#" class="stretched-link"></a>
+                          <h5 class="type-detail__name card-title">Xe tải</h5>
+                          <p class="type-detail__description card-text">Xe có tải trọng từ 0.5 đến 30 tấn và xe Container</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="type-detail">
+                      <div class="type-detail__body card">
+                        <img src="./assets/img/type/type-car.svg" class="type-img__top" alt="Xe con" />
+                        <div class="card-body">
+                          <a href="#" class="stretched-link"></a>
+                          <h5 class="type-detail__name card-title">Xe con page1</h5>
+                          <p class="type-detail__description card-text">Xe nhỏ từ 4 đến 7 chỗ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="type-pagination swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End type -->
+
+      <!-- Start advantage-->
+      <section class="advantage">
+        <div class="container">
+          <div class="advantage-wrapper">
+            <!-- advantage__heading--start -->
+            <div class="advantage-header">
+              <!-- advantage-title-start -->
+              <h2 class="advantage-header__sub header__sub">
+                <div class="advantage-header__text">Ưu điểm của ứng dụng</div>
+              </h2>
+              <h1 class="advantage-header__title">
+                <span style="color: #be1614">Một ứng dụng mới</span>
+                <span style="color: #3d3d3d">với nhiều ưu điểm vượt trội</span>
+              </h1>
+              <p class="advantage-header__desc">Từ những dịch vụ thiết yếu đến cơ hội gia tăng thu nhập. Tất cả đều có trên một nền tảng</p>
+            </div>
+            <!-- advantage__heading--end -->
+
+            <!-- advantage__content--start -->
+            <div class="advantage-list">
+              <div class="advantage-list__img">
+                <img src="./assets/img/advantage/advantage-phone.svg" alt="" style="width: 100%" />
+              </div>
+              <div class="advantage-item" id="item1">
+                <div class="advantage-item__number align-left disable">1</div>
+                <div class="advantage-item__header text-end">Giao diện dễ tiếp cận với mọi đối tượng</div>
+                <div class="advantage-item__desc text-end">Giao diện của ứng dụng khá rõ ràng, ít thao tác khi sử dụng</div>
+              </div>
+              <div class="advantage-item" id="item2">
+                <div class="advantage-item__number disable">2</div>
+                <div class="advantage-item__header text-start">ĐỊNH VỊ CHÍNH XÁC</div>
+                <div class="advantage-item__desc text-start">Giúp bạn biết chính xác quãng đường bạn cần di chuyển và cước phí mà bạn sẽ phải trả cho chuyến đi.</div>
+              </div>
+              <div class="advantage-item" id="item3">
+                <div class="advantage-item__number align-left disable">3</div>
+                <div class="advantage-item__header text-end">Đặt xe nhanh chóng đa dạng phương tiện</div>
+                <div class="advantage-item__desc text-end">Chỉ cần bạn hay hàng hoá của bạn muốn đến đâu, bằng loại xe gì, chúng tôi sẽ tìm tài xế giúp bạn trong giây lát.</div>
+              </div>
+              <div class="advantage-item" id="item4">
+                <div class="advantage-item__number actived">4</div>
+                <div class="advantage-item__header text-start color-red">CƯỚC PHÍ CHUYẾN ĐI RẺ ĐẾN BẤT NGỜ</div>
+                <div class="advantage-item__desc text-start">Giúp khách hàng luôn an tâm khi di chuyển</div>
+              </div>
+              <div class="advantage-item" id="item5">
+                <div class="advantage-item__number align-left actived">5</div>
+                <div class="advantage-item__header text-end color-red">TĂNG THU NHẬP CHO TÀI XẾ</div>
+                <div class="advantage-item__desc text-end">Giúp các tài xế không còn lo lắng phải chạy xe không một chiều</div>
+              </div>
+              <div class="advantage-item" id="item6">
+                <div class="advantage-item__number disable">6</div>
+                <div class="advantage-item__header text-start">HỖ TRỢ GIẢI ĐÁP 24/24H</div>
+                <div class="advantage-item__desc text-start">Luôn luôn lắng nghe & hỗ trợ cho người sử dụng</div>
+              </div>
+            </div>
+            <!-- advantage__content--end -->
+          </div>
+        </div>
+      </section>
+      <!--End advantage -->
+
+      <!-- Start rate -->
+      <section class="rate">
+        <div class="container">
+          <div class="rate-wrapper">
+            <!-- rate__heading--start -->
+            <div class="rate-header">
+              <h2 class="rate-header__sub header__sub">
+                <div class="rate-header__text">ĐÁNH GIÁ</div>
+              </h2>
+              <h1 class="rate-header__title">
+                <span style="color: #fff">Đánh giá của</span>
+                <span style="color: #be1614">khách hàng & tài xế</span>
+              </h1>
+              <p class="rate-header__desc">Những đóng góp của người dùng là một phần không thể thiếu để làm nên thành công của chúng tôi</p>
+            </div>
+            <!-- rate__heading--end -->
+            <!-- rate__content--start -->
+
+            <div class="rate-slide">
+              <div class="swiper rate-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="rate-item">
+                      <div class="rate-item__wraper">
+                        <div class="rate-card card">
+                          <div class="rate-edge">
+                            <img src="./assets/img/rate/rate-edge.svg" alt="" />
+                          </div>
+                          <div class="rate-introduce card-title">
+                            <div class="rate-introduce__avatar col-4">
+                              <div class="rate-introduce__img">
+                                <img src="./assets/img/rate/rate-avatar.svg" alt="" />
+                              </div>
+                            </div>
+                            <div class="rate-introduce__individual col-8">
+                              <div class="rate-introduce__name">Vo Thuy Linh</div>
+                              <div class="rate-introduce__location">Customer</div>
+                            </div>
+                          </div>
+                          <div class="rate-desc card-body">
+                            <p class="rate-desc__text lh-lg card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                            <div class="rate-desc__quotes">
+                              <img src="./assets/img/rate/rate-quotes.svg" alt="" />
+                            </div>
+                            <a href="#" class="stretched-link"></a>
+                          </div>
+                          <div class="rate-rating card-footer">
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="rate-item">
+                      <div class="rate-item__wraper">
+                        <div class="rate-card card">
+                          <div class="rate-edge">
+                            <img src="./assets/img/rate/rate-edge.svg" alt="" />
+                          </div>
+
+                          <div class="rate-introduce card-title">
+                            <div class="rate-introduce__avatar col-4">
+                              <div class="rate-introduce__img">
+                                <img src="./assets/img/rate/rate-avatar.svg" alt="" />
+                              </div>
+                            </div>
+                            <div class="rate-introduce__individual col-8">
+                              <div class="rate-introduce__name">Vo Thuy Linh</div>
+                              <div class="rate-introduce__location">Customer</div>
+                            </div>
+                          </div>
+                          <div class="rate-desc card-body">
+                            <a href="#" class="stretched-link"></a>
+                            <p class="rate-desc__text lh-lg card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                            <div class="rate-desc__quotes">
+                              <img src="./assets/img/rate/rate-quotes.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="rate-rating card-footer">
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="rate-item">
+                      <div class="rate-item__wraper">
+                        <div class="rate-card card">
+                          <div class="rate-edge">
+                            <img src="./assets/img/rate/rate-edge.svg" alt="" />
+                          </div>
+
+                          <div class="rate-introduce card-title">
+                            <div class="rate-introduce__avatar col-4">
+                              <div class="rate-introduce__img">
+                                <img src="./assets/img/rate/rate-avatar.svg" alt="" />
+                              </div>
+                            </div>
+                            <div class="rate-introduce__individual col-8">
+                              <div class="rate-introduce__name">Vo Thuy Linh</div>
+                              <div class="rate-introduce__location">Customer</div>
+                            </div>
+                          </div>
+                          <div class="rate-desc card-body">
+                            <a href="#" class="stretched-link"></a>
+                            <p class="rate-desc__text lh-lg card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                            <div class="rate-desc__quotes">
+                              <img src="./assets/img/rate/rate-quotes.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="rate-rating card-footer">
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="rate-item">
+                      <div class="rate-item__wraper">
+                        <div class="rate-card card">
+                          <div class="rate-edge">
+                            <img src="./assets/img/rate/rate-edge.svg" alt="" />
+                          </div>
+
+                          <div class="rate-introduce card-title">
+                            <div class="rate-introduce__avatar col-4">
+                              <div class="rate-introduce__img">
+                                <img src="./assets/img/rate/rate-avatar.svg" alt="" />
+                              </div>
+                            </div>
+                            <div class="rate-introduce__individual col-8">
+                              <div class="rate-introduce__name">Vo Thuy Linh</div>
+                              <div class="rate-introduce__location">Customer</div>
+                            </div>
+                          </div>
+                          <div class="rate-desc card-body">
+                            <a href="#" class="stretched-link"></a>
+                            <p class="rate-desc__text lh-lg card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                            <div class="rate-desc__quotes">
+                              <img src="./assets/img/rate/rate-quotes.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="rate-rating card-footer">
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                            <img class="rate-rating__star" src="./assets/img/rate/rate-star.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rate-pagination swiper-pagination"></div>
+              </div>
+            </div>
+
+            <!-- rate__content--end -->
+          </div>
+        </div>
+      </section>
+      <!--End rate-->
+
+      <!-- Start download-->
+      <section class="download">
+        <div class="download-path">
+          <img class="download-path__img" src="./assets/img/download/download-path.svg" alt="" style="width: 100%" />
+        </div>
+        <!-- <div class="download-phone">
+          <img src="./assets/img/download/download-phone.svg" alt="" style="width: 100%" />
+        </div> -->
+        <div class="container">
+          <div class="download-wrapper">
+            <!-- mainbody-maindownlink-title-start -->
+            <div class="download-content col-6">
+              <div class="download-header">
+                <h2 class="download-header__sub header__sub">
+                  <div class="download-header__text">TẢI APP NGAY</div>
+                </h2>
+                <h1 class="download-header__title">
+                  Tải <span style="color: #be1614">APP HUDUGO</span> để
+                  <p>trải nghiệm dịch vụ</p>
+                </h1>
+                <p class="download-header__desc">Trải nghiệm hài lòng, chu đáo, tạo điều kiện phát triển là giá trị cốt lõi mà chúng tôi muốn mang lại.</p>
+              </div>
+              <!-- mainbody-maindownlink-title-end -->
+              <!-- mainbody-maindownlink-start -->
+              <div class="download-link">
+                <div class="download-link__qr">
+                  <img src="./assets/img/download/download-qr.png" alt="" style="width: 100%; height: 100%; object-fit: contain" />
+                </div>
+                <div class="download-link__store">
+                  <div class="download-link__playstore">
+                    <img src="./assets/img/download/download-ggplay.jpg" alt="" style="width: 100%; height: 100%; object-fit: contain" />
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="download-link__appstore">
+                    <img src="./assets/img/download/download-appstore.jpg" alt="" style="width: 100%; height: 100%; object-fit: fill" />
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End download-->
+
+      <!-- Start new-->
+      <section class="new">
+        <div class="container">
+          <div class="new-wrapper">
+            <!-- new__heading--start -->
+            <div class="new-header">
+              <!-- new-title-start -->
+              <h2 class="new-header__sub header__sub">
+                <div class="new-header__text">TIN TỨC</div>
+              </h2>
+              <h1 class="new-header__title">Tin tức về <span style="color: #be1614"> HUDUGO</span></h1>
+              <p class="new-header__desc">Cập nhật những tin tức và thông báo mới nhất</p>
+              <!-- new-title-end -->
+            </div>
+            <!-- new__heading--end -->
+
+            <!-- new-content-start -->
+            <div class="new-slide">
+              <div class="swiper new-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="new__item">
+                      <div class="new-item__wraper">
+                        <div class="new-card card">
+                          <div class="new-img">
+                            <img class="new-img__top" src="./assets/img/new/new-journey.svg" alt="" />
+                            <div class="new-img__side">
+                              <div class="new-img__day">20</div>
+                              <div class="new-img__month">Thg 12, 2023</div>
+                            </div>
+                          </div>
+                          <div class="new-infor card-body">
+                            <a href="#" class="stretched-link"></a>
+                            <h2 class="new-item__title card-title">Your journey is easy</h2>
+                            <p class="new-item__desc card-text">Lorem Ipsum is simply dummy text of the printing indus orem ipsum has been the industrys standard dummy.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="new__item">
+                      <div class="new-item__wraper">
+                        <div class="new-card card">
+                          <div class="new-img">
+                            <img class="new-img__top" src="./assets/img/new/new-car.svg" alt="" />
+                            <div class="new-img__side">
+                              <div class="new-img__day">18</div>
+                              <div class="new-img__month">Thg 12, 2023</div>
+                            </div>
+                          </div>
+                          <div class="new-infor card-body">
+                            <a href="#" class="stretched-link"></a>
+                            <div class="new-item__title card-title">How to order a car</div>
+                            <div class="new-item__desc card-text">Lorem Ipsum is simply dummy text of the printing indus orem ipsum has been the industrys standard dummy.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="new__item">
+                      <div class="new-item__wraper">
+                        <div class="new-card card">
+                          <div class="new-img">
+                            <img class="new-img__top" src="./assets/img/new/new-taxi.svg" alt="" />
+                            <div class="new-img__side">
+                              <div class="new-img__day">15</div>
+                              <div class="new-img__month">Thg 12, 2023</div>
+                            </div>
+                          </div>
+                          <div class="new-infor card-body">
+                            <div class="new-item__title card-title">5 Tips for finding a taxi</div>
+                            <div class="new-item__desc card-text">Lorem Ipsum is simply dummy text of the printing indus orem ipsum has been the industrys standard dummy.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="new-pagination swiper-pagination"></div>
+              </div>
+            </div>
+            <!-- new-content-end -->
+          </div>
+        </div>
+      </section>
+      <!--End new-->
+    </main>
+    <!--End home -->
+    <!-- Start footer-->
+    <footer class="footer">
+      <div class="footer-header">
+        <div class="container">
+          <div class="footer-header__wraper">
+            <div class="footer-brand col-7">
+              <div class="footer-brand__logo">
+                <img src="./assets/img/footer/footer-logo.png" alt="" />
+              </div>
+              <div class="footer-brand__line">
+                <img src="./assets/img/footer/footer-line.svg" alt="" />
+              </div>
+              <div class="footer-brand__desc">We successfully cope with tasks of varying complexity, guarantees and regularly master new technologies.</div>
+            </div>
+            <div class="footer-red">
+              <div class="footer-red__icon">
+                <img src="./assets/img/footer/footer-phone.svg" alt="" />
+              </div>
+              <div class="footer-red__contact">
+                <div class="footer-red__text">Tổng đài liên hệ</div>
+                <div class="footer-red__number">0225 3568 299</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-body">
+        <div class="container">
+          <div class="footer-wraper">
+            <!-- footer-headquarters--start -->
+            <div class="footer-address col-5">
+              <div class="footer-address__title footer-title">Trụ sở chính</div>
+              <div class="footer-address__bar footer-bar">
+                <img src="./assets/img/footer/footer-bar2.svg" alt="" />
+                <img src="./assets/img/footer/footer-bar.svg" alt="" />
+              </div>
+
+              <div class="footer-address__list footer-list list-group">
+                <div class="footer-item__address footer-item list-group-item">
+                  <div class="footer-item__category">
+                    <div class="footer-item__icon">
+                      <img src="./assets/img/footer/location.svg" alt="" />
+                    </div>
+                    <span>Địa chỉ:</span>
+                  </div>
+                  <div class="footer-item__text">
+                    <a href="" class="footer-item__a" target="_blank"> Số 6/3/568 Trần Nhân Tông, P. Nam Sơn, Q. Kiến An, Thành phố Hải Phòng </a>
+                  </div>
+                </div>
+                <div class="footer-item__email footer-item list-group-item">
+                  <div class="footer-item__category">
+                    <div class="footer-item__icon">
+                      <img src="./assets/img/footer/mail.svg" alt="" />
+                    </div>
+                    <span>Email:</span>
+                  </div>
+                  <div class="footer-item__text">
+                    <a href="https://www.google.com/intl/vi/gmail/about/" class="footer-item__a" target="_blank">hudugocskh@gmail.com</a>
+                  </div>
+                </div>
+                <div class="footer-item__hotline footer-item list-group-item">
+                  <div class="footer-item__category">
+                    <div class="footer-item__icon">
+                      <img src="./assets/img/footer/telephone.svg" alt="" />
+                    </div>
+                    <span>Hotline:</span>
+                  </div>
+                  <div class="footer-item__text">0225 3568 299</div>
+                </div>
+              </div>
+            </div>
+            <!-- footer-headquarters--end -->
+
+            <div class="footer-link col-3">
+              <div class="footer-link__title footer-title">Liên kết nhanh</div>
+              <div class="footer-link__bar footer-bar">
+                <img src="./assets/img/footer/footer-bar2.svg" alt="" />
+                <img src="./assets/img/footer/footer-bar.svg" alt="" />
+              </div>
+              <div class="footer-link__list footer-list list-group">
+                <a href="link-to-terms" class="footer-item__terms footer-item list-group-item list-group-item-action">Điều khoản Hudugo</a>
+                <a href="link-to-privacy-policy" class="footer-item__privacy-policy footer-item list-group-item list-group-item-action">Chính sách bảo mật</a>
+                <a href="link-to-recruitment" class="footer-item__recruitment footer-item list-group-item list-group-item-action">Tuyển dụng</a>
+                <a href="link-to-guide" class="footer-item__guide footer-item list-group-item list-group-item-action">Hướng dẫn</a>
+                <a href="link-to-news" class="footer-item__news footer-item list-group-item list-group-item-action">Tin tức</a>
+                <a href="link-to-developer-platform" class="footer-item__developer-platform footer-item list-group-item list-group-item-action">Nền tảng nhà phát triển</a>
+              </div>
+            </div>
+
+            <div class="footer-register col-4">
+              <div class="footer-register__title footer-title">Đăng ký nhận tư vấn</div>
+              <div class="footer-register__bar footer-bar">
+                <img src="./assets/img/footer/footer-bar2.svg" alt="" />
+                <img src="./assets/img/footer/footer-bar.svg" alt="" />
+              </div>
+              <div class="footer-register__list footer-list list-group">
+                <div class="footer-item__enter footer-item list-group-item">Nhập số điện thoại của bạn để nhận tư vấn</div>
+                <div class="footer-input__wraper footer-item list-group-item">
+                  <input class="footer-item__input input" type="text" placeholder="Nhập số điện thoại" />
+                </div>
+                <div class="footer-btn__wraper footer-item list-group-item">
+                  <button class="footer-item__btn" type="button">Gửi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer__body--end -->
+        </div>
+
+        <div class="footer-city">
+          <img src="./assets/img/footer/footer-city.svg" alt="" style="width: 100%" />
+        </div>
+        <div class="footer-copyright">
+          <div class="footer-copyright__icon">
+            <!-- copyright--icon-start -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+              <g id="Copy_right" data-name="Copy right" transform="translate(-794.008 -6472.008)">
+                <g id="g1699" transform="translate(794.508 6472.508)">
+                  <path
+                    id="path1701"
+                    d="M0-308.166a6.5,6.5,0,0,0,6.5,6.5,6.5,6.5,0,0,0,6.5-6.5,6.5,6.5,0,0,0-6.5-6.5A6.5,6.5,0,0,0,0-308.166Z"
+                    transform="translate(0 314.666)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-width="1"
+                  />
+                </g>
+                <g id="g1703" transform="translate(797.934 6475.978)">
+                  <path
+                    id="path1705"
+                    d="M-245.2-42.071a3.03,3.03,0,0,0-4.285,0,3.03,3.03,0,0,0,0,4.285,3.03,3.03,0,0,0,4.285,0"
+                    transform="translate(250.375 42.958)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-width="1"
+                  />
+                </g>
+              </g>
+            </svg>
+            <!-- copyright--icon-end -->
+          </div>
+          <div class="footer-copyright__text">Copyright 2024 by Infinity Technology. All Rights Reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <!--End footer -->
+
+    <!--Start header-Offcanvas-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="header__offcanvas-body">
+        <div class="list-group list-group-flush" id="offcanvas__list">
+          <a href="#" class="list-group-item list-group-item-action offcanvas-link" id="offcanvas-first-child">Giới thiệu</a>
+          <a href="#" class="list-group-item list-group-item-action offcanvas-link">Hướng dẫn sử dụng</a>
+          <a href="#" class="list-group-item list-group-item-action offcanvas-link">Tin tức</a>
+          <div class="dropdown" id="offcanvas__dropdown">
+            <a href="#" class="list-group-item list-group-item-action offcanvas-link dropdown-toggle" id="languageDropdownOffcanvas" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Tiếng Việt</span>
+            </a>
+            <ul class="header-offcanvas__dropdown dropdown-menu" aria-labelledby="languageDropdownOffcanvas">
+              <li><a class="dropdown-item" href="#">English</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--End header-Offcanvas-->
+    <!-- Script Bootstrap -->
+    <script src="./assets/js/Library/bootstrap.bundle.min.js"></script>
+
+    <!-- Script Swiper -->
+    <script src="./assets/js/Library/swiper-bundle.min.js"></script>
+    <script src="./assets/js/Library/swiper-setup.js"></script>
+  </body>
+  <!--End body-->
+</html>

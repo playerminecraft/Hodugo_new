@@ -1,0 +1,67 @@
+@import "./Module/reset.css";
+@import "./Module/header.css";
+@import "./Module/slider.css";
+@import "./Module/introduction.css";
+@import "./Module/type.css";
+@import "./Module/advantage.css";
+@import "./Module/rate.css";
+@import "./Module/download.css";
+@import "./Module/new.css";
+@import "./Module/footer.css";
+@import "./Module/custom.css";
+
+@font-face {
+  font-family: "SVN-Avo";
+  src: url("./Library/SVN-Avo.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SVN-Avo";
+  src: url("./Library/SVN-Avo__bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SVN-Avo";
+  src: url("./Library/SVN-Avo\ italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+:root {
+  --sm-title: max(12.6px, min(2vw, 22px));
+  --m-title: max(20px, min(2vw, 50px));
+  --m_p-title: max(16px, min(2vw, 31px));
+  --sub-title: max(11.5px, min(2vw, 18px));
+  --paragraph: max(11.5px, min(1vw, 18px));
+  --nav-line-height: max(18px, min(3vw, 28px));
+  --sm-line-height: max(22px, min(2vw, 31px));
+  --m-line-height: max(30px, min(2vw, 50px));
+  --m-line-height-2: max(30px, min(2vw, 70px));
+  --sub-line-height: max(22px, min(2vw, 30px));
+  --nav-text: max(9px, min(1.1vw, 20px));
+  --font-bold: max(600, min(700, 900));
+}
+/* Small devices (phones): chiều rộng từ  424px đổ xuống */
+@media (max-width: 424px) {
+}
+/* Medium devices (phones): chiều rộng từ 425px đến 767px */
+@media (min-width: 425px) and (max-width: 767px) {
+}
+
+@media (max-width: 1023px) {
+}
+/* Tablet: */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+/* Laptop/Desktop: */
+@media (min-width: 1024px) {
+}
+/* Small laptops: chiều rộng từ 1024px đến 1439px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+/* Large laptops/desktops: chiều rộng từ 1440px trở lên */
+@media (min-width: 1440px) {
+}

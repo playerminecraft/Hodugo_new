@@ -1,0 +1,50 @@
+.slider-pagination span.swiper-pagination-bullet {
+  background-color: white;
+  opacity: 0.9;
+}
+
+img.slider-banner__img {
+  object-fit: cover;
+  width: 100%;
+}
+.slider-pagination {
+  bottom: 3%;
+}
+
+.slider-slide {
+  position: relative;
+}
+
+/* Mobile (Điện thoại di động): */
+@media (max-width: 767px) {
+  .slider-pagination span.swiper-pagination-bullet {
+    background-color: black;
+    opacity: 0.4;
+  }
+
+  .slider-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #be1614;
+    opacity: 0.9;
+  }
+  .slider-banner {
+    padding-bottom: 10%;
+  }
+}
+/* Small devices (phones): chiều rộng từ  424px đổ xuống */
+@media (max-width: 424px) {
+}
+/* Medium devices (phones): chiều rộng từ 425px đến 767px */
+@media (min-width: 425px) and (max-width: 767px) {
+}
+/* Tablet: */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+/* Laptop/Desktop: */
+@media (min-width: 1024px) {
+}
+/* Small laptops: chiều rộng từ 1024px đến 1439px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+/* Large laptops/desktops: chiều rộng từ 1440px trở lên */
+@media (min-width: 1440px) {
+}

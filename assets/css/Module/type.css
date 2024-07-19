@@ -1,0 +1,195 @@
+.type {
+  background: url(../../img/type//type-background__main.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.type-swiper {
+  padding-bottom: max(15px, min(4.5vw, 60px));
+}
+
+span.type-header__first {
+  text-align: right;
+  color: #3d3d3d;
+}
+
+span.type-header__last {
+  color: #be1614;
+}
+
+.type-header__sub {
+  color: #be1614;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: var(--sm-title);
+  line-height: var(--sm-line-height);
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: max(2px, min(-2.0625rem + 7vw, 30px));
+}
+
+.type-header__sub::before {
+  background: #fff;
+  clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
+  width: 115%;
+}
+
+.type-header__text {
+  position: relative;
+}
+
+.type-header__title {
+  font-size: var(--m-title);
+  line-height: var(--m-line-height-2);
+  display: flex;
+  justify-content: center;
+  margin-bottom: max(10px, min(2vw, 25px));
+  font-weight: bold;
+  grid-column-gap: 10px;
+  flex-wrap: wrap;
+}
+
+.type-header__desc {
+  font-size: var(--sub-title);
+  display: flex;
+  justify-content: center;
+  line-height: var(--sub-line-height);
+  margin: 0px auto;
+  text-align: center;
+  width: calc(70% + (100vw - 375px) * 0.04);
+}
+
+.type-detail {
+  padding: 4px 1%;
+  height: 100%;
+}
+
+.type-detail__body {
+  background-color: white;
+  height: 100%;
+  border-radius: 5%;
+  box-shadow: 0 3px 3px #cdcdcd;
+}
+
+.type-slide {
+  margin-top: max(25px, min(0rem + 5vw, 45px));
+  padding-bottom: max(10px, min(-2.1094rem + 8.75vw, 45px));
+  display: flex;
+  justify-content: center;
+}
+
+.type-detail__body img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.type-detail__name {
+  text-align: center;
+  margin: max(0px, min(2vw, 15px)) 0px;
+  font-size: var(--sm-title);
+  font-weight: bold;
+}
+
+.type-detail__description {
+  text-align: center;
+  margin-bottom: max(0px, min(2vw, 35px));
+  padding: 0px max(10px, min(2vw, 50px));
+  font-size: var(--paragraph);
+  line-height: var(--sub-line-height);
+}
+.type-pagination span.swiper-pagination-bullet {
+  background-color: black;
+  opacity: 0.5;
+}
+
+@media (max-width: 425px) {
+  /* Thêm quy tắc nếu cần cho độ rộng dưới 425px */
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  /* Thêm quy tắc nếu cần cho độ rộng từ 375px đến 424px */
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  /* Thêm quy tắc nếu cần cho độ rộng từ 425px đến 767px */
+}
+
+@media (max-width: 767px) {
+  /* Thêm quy tắc nếu cần cho độ rộng dưới 425px */
+  .type .container {
+    padding-right: initial;
+    margin-right: initial;
+    max-width: initial;
+  }
+  .type-slide {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .type-header {
+    padding: 0 max(4%, min(2vw, 10%));
+  }
+
+  .type-wrapper {
+    padding-top: calc(4.5% + (100vw - 375px) * 0.04);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .type-detail {
+    padding: 4px max(0%, min(2vw, 4%));
+  }
+}
+
+@media (max-width: 1023px) {
+  .type-detail {
+    padding: 0px 4%;
+    padding-bottom: 35px;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1439px) {
+  .type-detail {
+    padding: 4px 5%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .type-detail {
+    padding: 4px 4%;
+  }
+}
+
+@media (min-width: 769px) {
+  .type-wrapper {
+    padding-top: calc(4.5% + (100vw - 1024px) * 0.02);
+  }
+}
+
+/* The smaller, the bigger css */
+@media (width: 375px) {
+  .type-header__desc {
+    width: 90%;
+  }
+  .type-wrapper {
+    padding: 9.5% 0% 3%;
+  }
+}
+@media (min-width: 376px) and (max-width: 1919px) {
+  .type-header__desc {
+    width: calc(70% + (100vw - 375px) * 0.04);
+  }
+}
+
+@media (width: 1920px) {
+  .type-header__desc {
+    width: 70%;
+  }
+  .type-wrapper {
+    padding: 4.5% 0% 0%;
+  }
+}
