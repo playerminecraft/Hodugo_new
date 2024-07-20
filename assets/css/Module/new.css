@@ -67,7 +67,7 @@
 .new-item__title {
   color: #be1614;
   font-weight: bold;
-  font-size: var(--sub-line-height);
+  font-size: max(17.75px, min(1.75vw, 30px));
   margin-top: max(0px, min(2vw, 24px));
   line-height: max(24.6px, min(2vw, 42px));
 }

@@ -60,10 +60,10 @@
 }
 
 .advantage-item__number {
-  width: max(40px, min(4.5vw, 58px));
-  height: max(40px, min(4.5vw, 58px));
+  width: max(35px, min(6vw, 58px));
+  height: max(35px, min(6vw, 58px));
   text-align: center;
-  line-height: max(40px, min(4.5vw, 58px));
+  line-height: max(35px, min(6vw, 58px));
   font-size: var(--sm-title);
   font-weight: bold;
   border-radius: 15%;
@@ -87,7 +87,7 @@
   line-height: max(15px, min(5.5vw, 35px));
   width: 100%;
   text-transform: uppercase;
-  margin: max(7px, min(2vw, 15px)) 0px;
+  margin-top: max(0px, min(1vw, 15px));
   display: inline-block;
 }
 
@@ -171,7 +171,7 @@
     width: fit-content;
     height: fit-content;
     text-align: left !important;
-    margin-left: 15px;
+    margin-left: 8px;
   }
   .advantage-item__number {
     float: left;
@@ -179,7 +179,7 @@
 
   .advantage-item__desc {
     text-align: left !important;
-    margin-left: 55px;
+    margin-left: 45px;
   }
 
   .advantage-wrapper {

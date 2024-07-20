@@ -59,7 +59,6 @@ span.type-header__last {
   line-height: var(--sub-line-height);
   margin: 0px auto;
   text-align: center;
-  width: calc(70% + (100vw - 375px) * 0.04);
 }
 
 .type-detail {
@@ -172,17 +171,11 @@ span.type-header__last {
 
 /* The smaller, the bigger css */
 @media (width: 375px) {
-  .type-header__desc {
-    width: 90%;
-  }
   .type-wrapper {
     padding: 9.5% 0% 3%;
   }
 }
 @media (min-width: 376px) and (max-width: 1919px) {
-  .type-header__desc {
-    width: calc(70% + (100vw - 375px) * 0.04);
-  }
 }
 
 @media (width: 1920px) {

@@ -34,13 +34,14 @@
   --sm-title: max(12.6px, min(2vw, 22px));
   --m-title: max(20px, min(2vw, 50px));
   --m_p-title: max(16px, min(2vw, 31px));
-  --sub-title: max(11.5px, min(2vw, 18px));
-  --paragraph: max(11.5px, min(1vw, 18px));
+  --sub-title: max(15px, min(2vw, 18px));
+  --paragraph: max(15px, min(2vw, 18px));
   --nav-line-height: max(18px, min(3vw, 28px));
   --sm-line-height: max(22px, min(2vw, 31px));
   --m-line-height: max(30px, min(2vw, 50px));
   --m-line-height-2: max(30px, min(2vw, 70px));
   --sub-line-height: max(22px, min(2vw, 30px));
+
   --nav-text: max(9px, min(1.1vw, 20px));
   --font-bold: max(600, min(700, 900));
 }
