@@ -155,7 +155,6 @@
 .footer-item__text {
   padding: 0px 8% 0px 6.5%;
   padding-left: 35px;
-  position: relative;
 }
 
 .footer-list {
@@ -314,8 +313,6 @@
   }
   .footer-brand__logo {
     width: 100%;
-  }
-  .footer-link__list a {
   }
 }
 
