@@ -127,8 +127,6 @@ span.type-header__last {
     margin-right: initial;
     max-width: initial;
   }
-  .type-slide {
-  }
 }
 
 @media (max-width: 768px) {
