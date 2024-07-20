@@ -83,7 +83,7 @@
 }
 
 .rate-introduce {
-  margin-top: 2.5rem;
+  margin-top: max(25px, min(2vw, 40px));
   display: flex;
 }
 
@@ -150,6 +150,7 @@
   text-align: left;
   position: relative;
   font-size: var(--paragraph);
+  line-height: var(--sub-line-height) !important;
 }
 
 .rate-desc__quotes {
