@@ -158,7 +158,7 @@ svg.global-svg::after {
 
 .header-download__btn {
   display: block;
-  font-size: var(--paragraph);
+  font-size: max(15px, min(1vw, 18px));
   background-color: #be1614;
   color: #ffffff;
   border: none;
@@ -193,6 +193,10 @@ a#languageDropdownOffcanvas {
 
 /* Mobile (Điện thoại di động): */
 @media (max-width: 767px) {
+  nav.header-navbar .container-fluid {
+    padding: initial !important;
+    margin: inherit !important;
+  }
 }
 /* Small devices (phones): chiều rộng từ  424px đổ xuống */
 @media (max-width: 424px) {

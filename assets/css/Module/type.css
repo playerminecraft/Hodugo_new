@@ -18,6 +18,10 @@ span.type-header__last {
   color: #be1614;
 }
 
+.type-wrapper {
+  padding: 7%;
+}
+
 .type-header__sub {
   color: #be1614;
   font-weight: bold;
@@ -124,17 +128,12 @@ span.type-header__last {
     max-width: initial;
   }
   .type-slide {
-    padding-left: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .type-header {
     padding: 0 max(4%, min(2vw, 10%));
-  }
-
-  .type-wrapper {
-    padding-top: calc(4.5% + (100vw - 375px) * 0.04);
   }
 }
 
@@ -164,16 +163,10 @@ span.type-header__last {
 }
 
 @media (min-width: 769px) {
-  .type-wrapper {
-    padding-top: calc(4.5% + (100vw - 1024px) * 0.02);
-  }
 }
 
 /* The smaller, the bigger css */
 @media (width: 375px) {
-  .type-wrapper {
-    padding: 9.5% 0% 3%;
-  }
 }
 @media (min-width: 376px) and (max-width: 1919px) {
 }
@@ -181,8 +174,5 @@ span.type-header__last {
 @media (width: 1920px) {
   .type-header__desc {
     width: 70%;
-  }
-  .type-wrapper {
-    padding: 4.5% 0% 0%;
   }
 }

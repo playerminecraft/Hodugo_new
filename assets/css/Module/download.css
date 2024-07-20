@@ -5,7 +5,7 @@
 
 .download-wrapper {
   width: 100%;
-  padding: 5% 0 20% 0;
+  padding: 7% 0 20% 0;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -117,10 +117,6 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .download-path {
     bottom: -2%;
-  }
-
-  .download-wrapper {
-    padding: 5% 0 12% 0;
   }
 }
 

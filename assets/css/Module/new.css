@@ -7,7 +7,7 @@
 }
 
 .new-wrapper {
-  padding: 4.5% 0;
+  padding: 7% 0;
 }
 
 .new-swiper {
@@ -75,7 +75,7 @@
 .new-item__desc {
   font-size: var(--paragraph);
   margin-top: max(12px, min(2vw, 20px));
-  line-height: var(--sub-title);
+  line-height: max(8px, min(6vw, 28px));
 }
 
 .new-img__top {

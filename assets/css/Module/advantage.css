@@ -60,10 +60,10 @@
 }
 
 .advantage-item__number {
-  width: max(35px, min(6vw, 58px));
-  height: max(35px, min(6vw, 58px));
+  width: max(30px, min(6vw, 58px));
+  height: max(30px, min(6vw, 58px));
   text-align: center;
-  line-height: max(35px, min(6vw, 58px));
+  line-height: max(30px, min(6vw, 58px));
   font-size: var(--sm-title);
   font-weight: bold;
   border-radius: 15%;
@@ -171,7 +171,7 @@
     width: fit-content;
     height: fit-content;
     text-align: left !important;
-    margin-left: 8px;
+    margin-left: 15px;
   }
   .advantage-item__number {
     float: left;
