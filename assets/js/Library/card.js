@@ -1,6 +1,6 @@
 function adjustCardHeights() {
   // Lấy tất cả các thẻ div có lớp 'card'
-  const cards = document.querySelectorAll(".card");
+  const cards = document.querySelectorAll(".new-item__title");
 
   // Khởi tạo biến để lưu chiều cao tối đa
   let maxHeight = 0;
