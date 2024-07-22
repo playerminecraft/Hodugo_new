@@ -50,7 +50,7 @@
 .new-header__desc {
   text-align: center;
   font-size: var(--sub-title);
-  margin-top: max(10px, min(1vw, 30px));
+  /* margin-top: max(10px, min(1vw, 30px)); */
 }
 
 .new__item {
@@ -66,10 +66,11 @@
 }
 
 .new-item__title {
+  min-height: 38px;
   color: #be1614;
   font-weight: bold;
   font-size: max(17.75px, min(1.75vw, 30px));
-  margin-top: max(0px, min(2vw, 24px));
+  margin-top: max(0px, min(2vw, 12px));
   line-height: max(24.6px, min(2vw, 42px));
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -77,11 +78,13 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  /* height: max(3rem, min(1vw, 5rem)); */
+  /* grid-row: 1; */
+  margin-bottom: auto;
 }
 
 .new-item__desc {
   font-size: var(--paragraph);
-  margin-top: max(12px, min(2vw, 20px));
   line-height: max(8px, min(6vw, 28px));
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -89,6 +92,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  /* grid-row: 2; */
+  margin-top: max(10px, min(2vw, 15px));
 }
 
 .new-img__top {
