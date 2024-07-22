@@ -71,14 +71,14 @@
   font-weight: bold;
   font-size: max(17.75px, min(1.75vw, 30px));
   margin-top: max(0px, min(2vw, 12px));
-  line-height: max(24.6px, min(2vw, 42px));
+  line-height: max(24.6px, min(2.5vw, 42px));
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2; /* Số dòng tối đa */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* height: max(3rem, min(1vw, 5rem)); */
+  height: max(50px, min(4.5vw, 77px));
   /* grid-row: 1; */
   margin-bottom: auto;
 }
