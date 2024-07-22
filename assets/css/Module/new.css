@@ -53,9 +53,6 @@
   /* margin-top: max(10px, min(1vw, 30px)); */
 }
 
-.new__item {
-}
-
 .new-card {
   background: none;
   border: none;
@@ -160,6 +157,9 @@
     padding: initial;
     margin: initial;
     max-width: initial;
+  }
+  .new__item {
+    padding-left: 15px;
   }
 }
 

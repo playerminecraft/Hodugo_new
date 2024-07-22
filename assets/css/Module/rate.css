@@ -55,18 +55,6 @@
   line-height: var(--sub-line-height);
 }
 
-.rate-slide {
-  /* existing styles */
-}
-
-.rate-item {
-  /* existing styles */
-}
-
-/* .rate-item__wraper {
-  padding: 0px 3%;
-} */
-
 .rate-card {
   border-radius: 15px;
   padding-left: 5px;
@@ -142,10 +130,6 @@
   color: #be1614;
 }
 
-.rate-desc {
-  /* existing styles */
-}
-
 .rate-desc__text {
   text-align: left;
   position: relative;
@@ -189,6 +173,9 @@
     padding: initial;
     margin: initial;
     max-width: initial;
+  }
+  .rate-item {
+    padding-left: 15px !important;
   }
 }
 
