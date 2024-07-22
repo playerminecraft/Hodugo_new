@@ -19,7 +19,7 @@ span.type-header__last {
 }
 
 .type-wrapper {
-  padding: 7%;
+  padding: 7% 0px;
 }
 
 .type-header__sub {
@@ -123,8 +123,8 @@ span.type-header__last {
 @media (max-width: 767px) {
   /* Thêm quy tắc nếu cần cho độ rộng dưới 425px */
   .type .container {
-    padding-right: initial;
-    margin-right: initial;
+    padding: initial;
+    margin: initial;
     max-width: initial;
   }
 }

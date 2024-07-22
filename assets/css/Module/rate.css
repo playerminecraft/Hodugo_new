@@ -182,9 +182,6 @@
   .rate-swiper {
     padding-bottom: 12%;
   }
-  .rate-item {
-    padding: 0px 4%;
-  }
 }
 
 @media (max-width: 767px) {
